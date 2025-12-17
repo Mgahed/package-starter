@@ -38,8 +38,11 @@
 	},
 	"scripts": {
 		"post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+		"configure": "@php configure.php",
 		"test": "vendor/bin/phpunit",
-		"test-coverage": "vendor/bin/phpunit --coverage"
+		"test-coverage": "vendor/bin/phpunit --coverage",
+		"format": "vendor/bin/pint",
+		"analyse": "vendor/bin/phpstan analyse"
 	},
 	"config": {
 		"sort-packages": true,
